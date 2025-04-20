@@ -1,0 +1,1 @@
+// JavaScript for scroll-triggered animations
