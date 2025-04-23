@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rajapriya Mariappan | Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- AOS Animate On Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,6 +18,9 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
     <style>
       html {
         scroll-behavior: smooth;
@@ -50,20 +57,29 @@
     </style>
   </head>
   <body class="bg-white text-gray-800 font-sans">
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // only animate once while scrolling down
+      });
+    </script>
+
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
             src="assets/images/profile.png"
-            alt="Profile"
             class="rounded-circle"
             width="40"
             height="40"
+            alt="Logo"
           />
-          <strong class="ms-2">Rajapriya Mariappan</strong>
+          <span class="fw-bold">Rajapriya</span>
         </a>
         <button
           class="navbar-toggler"
@@ -74,10 +90,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          style="visibility: visible"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -99,24 +116,51 @@
     </nav>
 
     <!-- Hero -->
-    <section
-      class="d-flex align-items-center justify-content-center text-center"
-      style="height: 100vh"
-      id="home"
-    >
-      <div>
-        <h1 class="text-4xl fw-bold">Hey, I'm Rajapriya Mariappan</h1>
-        <p class="text-lg mt-3">
-          AI Developer | Immersive Tech Enthusiast | Creative Thinker
-        </p>
-        <a href="#projects" class="btn btn-outline-primary mt-4"
-          >View My Work</a
+    <section id="home" class="hero-section d-flex">
+      <div class="pattern-overlay">
+        <svg
+          class="wave parallax"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
         >
+          <path
+            class="wave1"
+            d="M0,160 C480,280 960,40 1440,160 L1440,320 L0,320 Z"
+            fill="#8b5cf6"
+            fill-opacity="0.1"
+          />
+          <path
+            class="wave2"
+            d="M0,200 C480,300 960,60 1440,200 L1440,320 L0,320 Z"
+            fill="#8b5cf6"
+            fill-opacity="0.05"
+          />
+        </svg>
+      </div>
+
+      <div
+        class="social-icons d-none d-md-flex flex-column align-items-center justify-content-center"
+      >
+        <a href="https://github.com/yourgithub" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="hero-content text-center w-100">
+          <h1 class="display-4 fw-bold">Hi, I'm Rajapriya</h1>
+          <p class="lead mt-3">
+            AI Developer • Immersive Tech Enthusiast • Creative Thinker
+          </p>
+          <a href="#projects" class="btn btn-animated mt-4"> Projects</a>
+        </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="text-center pt-5 mt-5">
+    <section id="about" class="text-center pt-5 creame-bg">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <p class="mt-4 w-75 mx-auto">
@@ -130,106 +174,295 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="text-center bg-light py-5">
+    <section id="about" class="py-5 ml-4 mr-4 creame-bg">
       <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="d-flex flex-wrap justify-content-center mt-4">
-          <span class="skill-tag">React.js</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">Unity</span>
-          <span class="skill-tag">A-Frame</span>
-          <span class="skill-tag">OpenCV</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Azure DevOps</span>
+        <div class="row align-items-center">
+          <!-- Left Column -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <h2 class="fw-bold mb-3">Get to know me!</h2>
+            <p>
+              I'm a <strong>Frontend Focused Web Developer</strong> building and
+              managing...
+            </p>
+            <p>
+              I also like sharing content...
+              <a href="#" class="text-purple-600 fw-bold">LinkedIn</a> and
+              <a href="#" class="text-purple-600 fw-bold">Instagram</a>.
+            </p>
+            <p>I'm open to <strong>Job</strong> opportunities...</p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-6 text-lg-start text-center" data-aos="fade-left">
+            <h2 class="fw-bold mb-3">My Skills</h2>
+            <div
+              class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3"
+            >
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">WordPress</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">SASS</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">SEO</span>
+              <span class="skill-pill">Terminal</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="text-center py-5">
+    <section id="projects" class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <img
-              src="assets/images/project1.png"
-              class="img-fluid mb-3"
-              alt="Project 1"
-            />
-            <h5>Freshness Monitoring Tool</h5>
-            <p>
-              An AI-powered vision system for grocery freshness using
-              MobileNetV2, cutting waste by 20%.
-            </p>
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title d-inline-block">Projects</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div
+              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
+            >
+              <img
+                src="assets/images/project1.png"
+                class="img-fluid mb-3 rounded"
+                alt="Project 1"
+              />
+              <h6 class="fw-bold text-uppercase text-muted">Project 1</h6>
+              <h5 class="mb-2">Freshness Monitoring Tool</h5>
+              <p class="text-muted small">
+                An AI-powered vision system for grocery freshness using
+                MobileNetV2, cutting waste by 20%.
+              </p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img
-              src="assets/images/project2.png"
-              class="img-fluid mb-3"
-              alt="Project 2"
-            />
-            <h5>3D Metaverse</h5>
-            <p>
-              Collaborative VR design platform with DALL·E 3 integration for
-              fashion visualization in browsers & VR.
-            </p>
+
+          <!-- Project Card 2 -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
+            >
+              <img
+                src="assets/images/project2.png"
+                class="img-fluid mb-3 rounded"
+                alt="Project 2"
+              />
+              <h6 class="fw-bold text-uppercase text-muted">Project 2</h6>
+              <h5 class="mb-2">3D Metaverse</h5>
+              <p class="text-muted small">
+                Collaborative VR design platform with DALL·E 3 integration for
+                fashion visualization in browsers & VR.
+              </p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img
-              src="assets/images/project3.png"
-              class="img-fluid mb-3"
-              alt="Project 3"
-            />
-            <h5>Mixed Reality Retail Tool</h5>
-            <p>
-              HoloLens app to optimize pricing & visualize KPIs in immersive 3D
-              store layouts.
-            </p>
+
+          <!-- Project Card 3 -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div
+              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
+            >
+              <img
+                src="assets/images/project3.png"
+                class="img-fluid mb-3 rounded"
+                alt="Project 3"
+              />
+              <h6 class="fw-bold text-uppercase text-muted">Project 3</h6>
+              <h5 class="mb-2">Mixed Reality Retail Tool</h5>
+              <p class="text-muted small">
+                HoloLens app to optimize pricing & visualize KPIs in immersive
+                3D store layouts.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="text-center bg-light py-5">
+    <section id="experience" class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <p class="mt-4 w-75 mx-auto">
-          <strong>TATA Consultancy Services</strong><br />
-          Innovation Developer (2019 – 2024)<br />
-          Built AR/VR tools for Optumera & retail strategy, AI-based freshness
-          tools, and VR platforms for garment design.
-        </p>
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title d-inline-block">Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="mb-1 fw-bold">Innovation Developer @ TCS</h5>
+              <small class="text-muted">2019 – 2024</small>
+              <p>
+                Built AR/VR tools for retail, AI-based freshness monitoring, and
+                immersive platforms.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dummy Entry 1 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="mb-1 fw-bold">Frontend Intern @ DevStudio</h5>
+              <small class="text-muted">2018 – 2019</small>
+              <p>
+                Assisted in building responsive React dashboards and integrated
+                REST APIs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dummy Entry 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="mb-1 fw-bold">UI Designer @ PixelWave</h5>
+              <small class="text-muted">2016 – 2018</small>
+              <p>
+                Created mobile-first interfaces, improved user flow, and
+                performed UX testing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dummy Entry 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="mb-1 fw-bold">Software Trainee @ TechNest</h5>
+              <small class="text-muted">2015 – 2016</small>
+              <p>
+                Supported backend developers, wrote utility scripts, and
+                documented services.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="text-center py-5">
+    <section id="contact" class="py-5 text-center bg-white">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="mt-4">
+        <!-- Heading -->
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h2 class="section-title d-inline-block">Contact</h2>
+        </div>
+
+        <!-- Intro text -->
+        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
           Let's collaborate! Reach out via
-          <a href="mailto:rajapriyamariappan@gmail.com" class="text-purple-600"
+          <a
+            href="mailto:rajapriyamariappan@gmail.com"
+            class="text-purple-600 fw-semibold"
             >email</a
+          >,
+          <a
+            href="https://www.linkedin.com/in/yourlinkedin"
+            target="_blank"
+            class="text-purple-600 fw-semibold"
+            >LinkedIn</a
           >
-          or download my resume below.
         </p>
+
+        <!-- Download Button -->
         <a
           href="assets/pdf/Rajapriya_Mariappan_Resume.pdf"
-          class="btn btn-primary mt-3"
+          class="btn btn-primary px-4 py-2 rounded-pill mb-4"
           download
-          >Download Resume</a
+          data-aos="zoom-in"
+          data-aos-delay="200"
         >
+          Download Resume
+        </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center bg-dark text-white py-3">
-      <p>© 2025 Rajapriya Mariappan</p>
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- Left Column -->
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold text-uppercase">Rajapriya Mariappan</h5>
+            <p class="small mb-0">
+              A Frontend focused Web Developer building immersive AR/VR
+              experiences and AI-powered interfaces that bring ideas to life and
+              elevate user experience.
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6 mb-4 text-md-end text-start">
+            <h6 class="fw-bold text-uppercase">Social</h6>
+            <div
+              class="d-flex gap-3 justify-content-md-end justify-content-start mt-2"
+            >
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                class="text-white fs-5"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/yourgithub"
+                target="_blank"
+                class="text-white fs-5"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://twitter.com/yourtwitter"
+                target="_blank"
+                class="text-white fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+        <div class="text-center small">© Copyright 2025.</div>
+      </div>
     </footer>
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const wave = document.querySelector(".wave");
+        const scrollY = window.scrollY;
+        wave.style.transform = `translateY(${
+          scrollY * 0.2
+        }px) translateX(-20%)`;
+      });
+    </script>
+    <script>
+      // Show button on scroll
+      const topBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          topBtn.style.display = "block";
+        } else {
+          topBtn.style.display = "none";
+        }
+      };
+
+      // Scroll to top when clicked
+      topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
