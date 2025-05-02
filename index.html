@@ -8,6 +8,7 @@
     <!-- AOS Animate On Scroll CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
     <link
       rel="stylesheet"
@@ -99,7 +100,10 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#about">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -117,7 +121,9 @@
 
     <!-- Hero -->
     <section id="home" class="hero-section d-flex">
-      <div class="pattern-overlay">
+      <div id="tsparticles"></div>
+
+      <!-- <div class="pattern-overlay">
         <svg
           class="wave parallax"
           viewBox="0 0 1440 320"
@@ -136,15 +142,15 @@
             fill-opacity="0.05"
           />
         </svg>
-      </div>
+      </div> -->
 
       <div
         class="social-icons d-none d-md-flex flex-column align-items-center justify-content-center"
       >
-        <a href="https://github.com/yourgithub" target="_blank"
+        <a href="https://github.com/RajapriyaDevHub" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"
+        <a href="https://linkedin.com/in/rajapriyamariappan" target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
       </div>
@@ -164,11 +170,11 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <p class="mt-4 w-75 mx-auto">
-          I'm a passionate developer with 12+ years of experience in software
-          development. I specialize in immersive technologies like AR/VR and AI.
-          Currently pursuing a Master’s in Multimedia at the University of
-          Alberta, I aim to innovate at the intersection of web, XR, and machine
-          learning.
+          I'm a passionate developer with experience in software development,
+          machine learning, and immersive technologies . Currently pursuing a
+          Master’s in Multimedia at the University of Alberta, I’m driven to
+          create innovative solutions at the intersection of web, extended
+          reality (XR), and artificial intelligence.
         </p>
       </div>
     </section>
@@ -181,15 +187,28 @@
           <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
             <h2 class="fw-bold mb-3">Get to know me!</h2>
             <p>
-              I'm a <strong>Frontend Focused Web Developer</strong> building and
-              managing...
+              I'm a Frontend-Focused Web Developer with a passion for building
+              intuitive, responsive, and visually engaging web experiences. My
+              work blends the power of software development, machine learning,
+              and immersive technologies to create innovative digital solutions.
             </p>
             <p>
-              I also like sharing content...
-              <a href="#" class="text-purple-600 fw-bold">LinkedIn</a> and
-              <a href="#" class="text-purple-600 fw-bold">Instagram</a>.
+              I love sharing updates and connecting with the developer
+              community...
+              <a
+                href="https://linkedin.com/in/rajapriyamariappan
+              "
+                class="text-purple-600 fw-bold"
+                >LinkedIn</a
+              >
+              and
+              <a
+                href="https://github.com/RajapriyaDevHub"
+                class="text-purple-600 fw-bold"
+                >Github</a
+              >.
             </p>
-            <p>I'm open to <strong>Job</strong> opportunities...</p>
+            <!-- <p>I'm open to <strong>Job</strong> opportunities...</p> -->
           </div>
 
           <!-- Right Column -->
@@ -198,86 +217,250 @@
             <div
               class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3"
             >
-              <span class="skill-pill">HTML</span>
-              <span class="skill-pill">CSS</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">React</span>
-              <span class="skill-pill">WordPress</span>
-              <span class="skill-pill">PHP</span>
-              <span class="skill-pill">SASS</span>
-              <span class="skill-pill">Git</span>
-              <span class="skill-pill">GitHub</span>
-              <span class="skill-pill">Responsive Design</span>
-              <span class="skill-pill">SEO</span>
-              <span class="skill-pill">Terminal</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Typescript</span>
+              <span class="skill-pill">Tailwind</span>
+              <span class="skill-pill">OpenCV</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">Unity</span>
+              <span class="skill-pill">AFRAME</span>
+              <span class="skill-pill">AWS</span>
+              <span class="skill-pill">Azure</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Education -->
+    <section id="education" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title d-inline-block">Education</h2>
+        </div>
 
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div
+              class="edu-card-box p-4 shadow-sm rounded-4 bg-white text-center h-100"
+            >
+              <div class="edu-icon mb-3">
+                <i class="fas fa-university fa-2x text-purple-600"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Master in Multimedia</h5>
+              <p class="text-muted small mb-1">University of Alberta</p>
+              <p class="text-muted">Alberta, Canada</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="edu-card-box p-4 shadow-sm rounded-4 bg-white text-center h-100"
+            >
+              <div class="edu-icon mb-3">
+                <i class="fas fa-laptop-code fa-2x text-purple-600"></i>
+              </div>
+              <h5 class="fw-bold mb-2">B.E. in Computer Science</h5>
+              <p class="text-muted small mb-1">Anna University</p>
+              <p class="text-muted">Chennai, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Projects -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="py-3 bg-light">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
           <h2 class="section-title d-inline-block">Projects</h2>
         </div>
-
         <div class="row g-4">
           <!-- Project Card 1 -->
           <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div
-              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
-            >
-              <img
-                src="assets/images/project1.png"
-                class="img-fluid mb-3 rounded"
-                alt="Project 1"
-              />
-              <h6 class="fw-bold text-uppercase text-muted">Project 1</h6>
-              <h5 class="mb-2">Freshness Monitoring Tool</h5>
-              <p class="text-muted small">
-                An AI-powered vision system for grocery freshness using
-                MobileNetV2, cutting waste by 20%.
-              </p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <!-- FRONT -->
+                <div class="flip-card-front">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <img
+                      src="assets/images/project1.png"
+                      class="img-fluid mb-3 rounded proj-img"
+                      alt="Project 1"
+                    />
+                    <h6 class="fw-bold text-uppercase text-muted">
+                      Freshness Monitoring Tool
+                    </h6>
+                    <!-- <p class="text-muted small">
+                      AI-powered vision system for grocery freshness.
+                    </p> -->
+                  </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="flip-card-back">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <h5 class="mb-2">Highlights</h5>
+                    <ul class="text-start small ps-3 mb-0">
+                      <li>
+                        <strong>Real-time vision system</strong> for freshness
+                        detection in bananas & tomatoes
+                      </li>
+                      <li>
+                        <strong>SSDLite MobileNetV2:</strong> Lightweight deep
+                        learning model optimized for edge devices
+                      </li>
+                      <li>
+                        <strong>OpenCV:</strong> Image preprocessing with color,
+                        texture, and shape analysis
+                      </li>
+                      <li>
+                        <strong>Reduced waste</strong> by automating subjective
+                        manual inspection
+                      </li>
+                      <li>
+                        <strong>Industry use case:</strong> Retail & supply
+                        chain inventory management
+                      </li>
+                    </ul>
+                    <!-- <p class="text-muted small">
+                      Uses MobileNetV2, cuts waste 20%, TensorFlow Lite
+                      optimized.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 2 -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div
-              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
-            >
-              <img
-                src="assets/images/project2.png"
-                class="img-fluid mb-3 rounded"
-                alt="Project 2"
-              />
-              <h6 class="fw-bold text-uppercase text-muted">Project 2</h6>
-              <h5 class="mb-2">3D Metaverse</h5>
-              <p class="text-muted small">
-                Collaborative VR design platform with DALL·E 3 integration for
-                fashion visualization in browsers & VR.
-              </p>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <!-- FRONT -->
+                <div class="flip-card-front">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <img
+                      src="assets/images/project2.png"
+                      class="img-fluid mb-3 rounded proj-img"
+                      alt="Project 1"
+                    />
+                    <h6 class="fw-bold text-uppercase text-muted">
+                      Collaborative Design Platform
+                    </h6>
+                    <!-- <p class="text-muted small">
+                      VR platform for designers to use DALL-E.
+                    </p> -->
+                  </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="flip-card-back">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <h5 class="mb-2">Highlights</h5>
+                    <ul class="text-start small ps-3 mb-0">
+                      <li>
+                        <strong>VR-based collaborative platform</strong> for
+                        garment design using A-Frame
+                      </li>
+                      <li>
+                        <strong>Voice-controlled</strong> prompts to generate
+                        garment patterns via DALL·E
+                      </li>
+                      <li>
+                        <strong>Real-time material updates</strong> on 3D
+                        mannequins shared across users
+                      </li>
+                      <li>
+                        <strong>Prompt refinement pipeline</strong> for enhanced
+                        design specificity
+                      </li>
+                      <li>
+                        <strong>Multi-user interaction:</strong> Concurrent
+                        updates in shared 3D environment
+                      </li>
+                    </ul>
+                    <!-- <p class="text-muted small">
+                      Uses MobileNetV2, cuts waste 20%, TensorFlow Lite
+                      optimized.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 3 -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div
-              class="project-card h-100 text-center p-4 shadow-sm rounded-4 bg-white"
-            >
-              <img
-                src="assets/images/project3.png"
-                class="img-fluid mb-3 rounded"
-                alt="Project 3"
-              />
-              <h6 class="fw-bold text-uppercase text-muted">Project 3</h6>
-              <h5 class="mb-2">Mixed Reality Retail Tool</h5>
-              <p class="text-muted small">
-                HoloLens app to optimize pricing & visualize KPIs in immersive
-                3D store layouts.
-              </p>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <!-- FRONT -->
+                <div class="flip-card-front">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <img
+                      src="assets/images/project3.png"
+                      class="img-fluid mb-3 rounded proj-img"
+                      alt="Project 1"
+                    />
+                    <h6 class="fw-bold text-uppercase text-muted">
+                      Mixed Reality Store Insight
+                    </h6>
+                    <!-- <p class="text-muted small">
+                      AI-powered vision system for grocery freshness.
+                    </p> -->
+                  </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="flip-card-back">
+                  <div
+                    class="card-content text-center p-4 shadow-sm rounded-4 bg-white"
+                  >
+                    <h5 class="mb-2">Highlights</h5>
+                    <ul class="text-start small ps-3 mb-0">
+                      <li>
+                        <strong>Designed with Unity & MRTK</strong> for
+                        immersive retail planning on HoloLens
+                      </li>
+                      <li>
+                        <strong>2D-to-3D layout converter:</strong> Builds
+                        spatial store layouts from flat plans
+                      </li>
+                      <li>
+                        <strong>Planogram integration:</strong> Visualize and
+                        adjust product placements in 3D
+                      </li>
+                      <li>
+                        <strong>Interactive analytics:</strong> Overlay KPIs
+                        using voice and eye-gaze inputs
+                      </li>
+                      <li>
+                        <strong>Hands-free interface:</strong> Supports
+                        real-time layout modifications in MR
+                      </li>
+                    </ul>
+                    <!-- <p class="text-muted small">
+                      Uses MobileNetV2, cuts waste 20%, TensorFlow Lite
+                      optimized.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -285,62 +468,92 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="py-5 bg-light">
+    <section id="experience" class="py-3 bg-light">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
           <h2 class="section-title d-inline-block">Experience</h2>
         </div>
 
         <div class="timeline">
-          <!-- Timeline Item -->
+          <!-- TCS Retail Strategic Initiative -->
           <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h5 class="mb-1 fw-bold">Innovation Developer @ TCS</h5>
-              <small class="text-muted">2019 – 2024</small>
-              <p>
-                Built AR/VR tools for retail, AI-based freshness monitoring, and
-                immersive platforms.
-              </p>
+              <h5 class="mb-1 fw-bold">
+                Innovation Developer @ TATA Consultancy Services – Retail
+                Research Center
+              </h5>
+              <small class="text-muted">April 2019 – August 2024</small>
+              <ul class="mb-0 mt-2 small ps-3">
+                <li>
+                  <strong>Freshness Monitoring Tool:</strong> Built a
+                  vision-driven solution using OpenCV and SSDLite MobileNetV2 to
+                  predict shelf-life of perishables.
+                </li>
+                <li>
+                  <strong>Collaborative Design Platform:</strong> Created a VR
+                  design tool with DALL·E & voice commands for multi-user
+                  garment visualization using A-Frame.
+                </li>
+                <li>
+                  <strong>Mixed Reality Store Layout Design:</strong> Enabled 3D
+                  planogram visualization in HoloLens using Unity & MRTK with
+                  voice and eye-gaze control.
+                </li>
+                <li>
+                  <strong>Optumera NRF MR App:</strong> Developed an MR
+                  experience for price optimization and KPI visualization in
+                  Unity.
+                </li>
+                <li>
+                  <strong>VR Merchandising Tools:</strong> Built immersive
+                  design workflows with A-Frame and Three.js for Oculus Quest
+                  Pro.
+                </li>
+                <li>
+                  <strong>AR Product Viewer:</strong> Developed an AR experience
+                  to visualize products with dynamic 3D models.
+                </li>
+                <li>
+                  <strong>Appointment Connect Portal:</strong> Built a React.js
+                  app to manage retail store scheduling based on capacity.
+                </li>
+                <li>
+                  <strong>2D-3D Digital Display Assistant:</strong> Created a
+                  visual merchandising tool with heatmaps and KPIs to optimize
+                  apparel placement.
+                </li>
+              </ul>
             </div>
           </div>
 
-          <!-- Dummy Entry 1 -->
+          <!-- TCS Nielsen Enrichment Studio -->
           <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h5 class="mb-1 fw-bold">Frontend Intern @ DevStudio</h5>
-              <small class="text-muted">2018 – 2019</small>
-              <p>
-                Assisted in building responsive React dashboards and integrated
-                REST APIs.
-              </p>
-            </div>
-          </div>
-
-          <!-- Dummy Entry 2 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h5 class="mb-1 fw-bold">UI Designer @ PixelWave</h5>
-              <small class="text-muted">2016 – 2018</small>
-              <p>
-                Created mobile-first interfaces, improved user flow, and
-                performed UX testing.
-              </p>
-            </div>
-          </div>
-
-          <!-- Dummy Entry 3 -->
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h5 class="mb-1 fw-bold">Software Trainee @ TechNest</h5>
-              <small class="text-muted">2015 – 2016</small>
-              <p>
-                Supported backend developers, wrote utility scripts, and
-                documented services.
-              </p>
+              <h5 class="mb-1 fw-bold">
+                Software Developer @ TATA Consultancy Services – Nielsen
+                Enrichment Studio
+              </h5>
+              <small class="text-muted">January 2012 – March 2019</small>
+              <ul class="mb-0 mt-2 small ps-3">
+                <li>
+                  Developed Nielsen Integration Service Platform for seamless
+                  client data transformation, processing, and reporting.
+                </li>
+                <li>
+                  Customized retail media effects mapping with client data for
+                  survey enrichment and analytics.
+                </li>
+                <li>
+                  Improved frontend functionality, test coverage, and quality
+                  through iterative validation and client feedback.
+                </li>
+                <li>
+                  Collaborated with UX designers, product owners, and architects
+                  to develop scalable transformation workflows.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -348,7 +561,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-5 text-center bg-white">
+    <section id="contact" class="py-3 text-center bg-white">
       <div class="container">
         <!-- Heading -->
         <div class="text-center mb-4" data-aos="fade-up">
@@ -364,7 +577,7 @@
             >email</a
           >,
           <a
-            href="https://www.linkedin.com/in/yourlinkedin"
+            href="https://linkedin.com/in/rajapriyamariappan"
             target="_blank"
             class="text-purple-600 fw-semibold"
             >LinkedIn</a
@@ -405,7 +618,7 @@
               class="d-flex gap-3 justify-content-md-end justify-content-start mt-2"
             >
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://linkedin.com/in/rajapriyamariappan"
                 target="_blank"
                 class="text-white fs-5"
                 ><i class="fab fa-linkedin-in"></i
@@ -415,12 +628,6 @@
                 target="_blank"
                 class="text-white fs-5"
                 ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://twitter.com/yourtwitter"
-                target="_blank"
-                class="text-white fs-5"
-                ><i class="fab fa-twitter"></i
               ></a>
             </div>
           </div>
