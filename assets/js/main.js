@@ -5,11 +5,11 @@ document.querySelectorAll('.flip-card').forEach(card => {
 });
 tsParticles.load("tsparticles", {
     fullScreen: { enable: false },
-    background: { color: { value: "#ffffff" } },
+    background: { color: { value: "#0d1117" } },
     fpsLimit: 60,
     particles: {
         number: { value: 60, density: { enable: true, area: 800 } },
-        color: { value: ["#8b5cf6", "#6366f1", "#4f46e5"] },
+        color: { value: ["#06b6d4", "#0ea5e9", "#22d3ee"] },
         shape: {
             type: ["circle", "triangle", "square", "polygon"],
             options: {
